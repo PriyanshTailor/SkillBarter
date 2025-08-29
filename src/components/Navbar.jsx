@@ -1,5 +1,6 @@
 
 import React from "react";
+import { Link } from "react-router-dom";
 import Logo from "../assets/Logo.png";
 
 const Navbar = () => {  
@@ -13,11 +14,11 @@ const Navbar = () => {
 
       {/* Menu */}
       <nav className="space-x-6 text-gray-700 font-medium">
-        <a href="#" className="hover:text-[#190a64]">Dashboard</a>
-        <a href="#" className="text-[#190a64] font-semibold">Explore Skills</a>
-        <a href="#">My Skills</a>
-        <a href="#">My Barters</a>
-        <a href="#">Profile</a>
+        <Link to="/" className="hover:text-[#190a64]">Dashboard</Link>
+        <Link to="/exploreskills" className="hover:text-[#190a64]">Explore Skills</Link>
+        <Link to="/myskills" className="hover:text-[#190a64]">My Skills</Link>
+        <Link to="/mybarters" className="hover:text-[#190a64]">My Barters</Link>
+        <Link to="/profile" className="hover:text-[#190a64]">Profile</Link>
       </nav>
 
       {/* Search + Avatar */}
